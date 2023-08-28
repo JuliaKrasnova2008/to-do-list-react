@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+body {
+    background-color: #f3f0e0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+    margin: 0;
+    padding: 42px 69px 85px 69px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation__logout-img {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 32px;
+    float: right;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    margin: 0;
+    padding: 42px 69px 85px 69px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+.container__title {
+    margin: 0;
+    padding: 0;
+    padding-right: 300px;
+    text-align: end;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #406973;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutUser {
+    margin: 0;
+    padding: 20px;
+    max-width: 486px;
+    max-height: 500px;
+    background: #ffc89b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutUser__avatar {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 68px;
+    max-width: 188px;
+    max-height: 188px;
+}
+
+.aboutUser__name {
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.aboutUser__about {
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.elements {
+    margin: 0;
+    padding: 0;
+    padding-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 80%;
+}
+.form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #e5e5e5;
+    align-items: center;
+    border-radius: 10px;
+}
+.form__input {
+    margin: 0;
+    padding: 5px 20px 5px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: inherit;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.form__input:focus {
+    outline: none;
+}
+
+.elements__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.form__submit {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    margin-right: 18px;
+    width: 30px;
+    height: 30px;
+}
+.elements__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.elements__item_ready {
+    background: #a7ccb397;
+}
+
+.elements__btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.elements__btn_ready {
+    background-image: url(./images/done.svg);
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+.elements__btn_delete {
+    background-image: url(./images/delete.svg);
+    background-position: center;
+    background-size: contain;
+}
+
+.button__check {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 14px;
+}
+
+.elements__subtitle {
+    margin: 0;
+    padding: 5px 20px 5px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
